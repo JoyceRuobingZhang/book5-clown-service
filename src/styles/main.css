@@ -1,0 +1,13 @@
+@import "./detail.css";
+h1 {
+    font-family: 'Chewy', cursive;
+    font-size: 3rem;
+    color: skyblue;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    color: rgb(135, 153, 235);
+}

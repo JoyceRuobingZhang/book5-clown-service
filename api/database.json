@@ -1,0 +1,34 @@
+{
+  "clowns": [
+    {
+      "id": 1,
+      "name": "Buttons"
+    },
+    {
+      "id": 2,
+      "name": "Lollipop"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "parentName": "Bob",
+      "childName": "Bobby",
+      "numberOfChildren": 9,
+      "address": "4026 Abby dr.",
+      "reservedDate": "2021-06-27",
+      "reservedLegthOfHours": 2
+    },
+    {
+      "parentName": "Tom",
+      "childName": "Jerry",
+      "numberOfChildren": "6",
+      "address": "333 dr.",
+      "reservedDate": "2021-06-10",
+      "reservedLegthOfHours": "2",
+      "clownId": 2,
+      "id": 2
+    }
+  ],
+  "completions": []
+}
