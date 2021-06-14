@@ -38,15 +38,18 @@ export const Form = () => {
 
 let clownId
 document.addEventListener("change", e => {
-    if (e.target.name = "clown") {
+    if (e.target.name === "clown") {
+        //e.target.name ❗️❗️❗️=== "clown" 注意要用三等号！！！🔴🔴🔴
         clownId = parseInt(e.target.value)
     }
 })
 
 document.addEventListener("click", e => {
     if (e.target.id === "submit") {
-        const userParentName = document.getElementById("parentName").value
+        const userParentName = document.querySelector("input[id='numberOfChildren']").value
+            //🟡document.querySelector("input[id='numberOfChildren']")
         const userChildName = document.getElementById("childName").value
+            // 🟡document.getElementById("childName")   两种选法都可以❗️
         const userNumberOfChildren = document.getElementById("numberOfChildren").value
         const userAddress = document.getElementById("Address").value
         const userReservedDate = document.getElementById("reservedDate").value

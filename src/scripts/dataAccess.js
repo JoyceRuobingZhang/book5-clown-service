@@ -2,7 +2,7 @@ const applicationState = {
 
 }
 
-let clowns = []
+
 
 const API = "http://localhost:8000"
 export const fetchReservation = () => {
@@ -13,6 +13,8 @@ export const fetchReservation = () => {
         })
 }
 
+
+let clowns = []
 export const fetchClown = () => {
     return fetch(`${API}/clowns`)
         .then(response => response.json())
