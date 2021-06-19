@@ -50,8 +50,13 @@ export const deleteReservation = (id) => {
         )
 }
 
+// to make the reservations display in time (reservedDate) order
 export const getReservations = () => {
-    return applicationState.reservations.map(reservation => ({...reservation }))
+    const reservations = applicationState.reservations.map(reservation => ({...reservation }))
+    const reservationsInTimeOrder = reservations.sort(function(x, y) {
+        return x.reservedDate.localeCompare(y.reservedDate)
+    })
+    return reservationsInTimeOrder
 }
 
 export const getClowns = () => {
